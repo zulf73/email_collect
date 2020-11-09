@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr" prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# book: http://ogp.me/ns/book# profile: http://ogp.me/ns/profile# video: http://ogp.me/ns/video# product: http://ogp.me/ns/product# content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"eb60764641",applicationID:"374286"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1173.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta about="/banner-overlays-inner-page/inner06a" typeof="skos:Concept" property="rdfs:label skos:prefLabel" content="INNER_06a" />
+<link rel="shortcut icon" href="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/favicon.ico" type="image/gif" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="https://www.econ.berkeley.edu/faculty" />
+<link rel="shortlink" href="https://www.econ.berkeley.edu/faculty" />
+<meta property="og:site_name" content="Department of Economics" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.econ.berkeley.edu/faculty" />
+<meta property="og:title" content="Faculty profiles" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="https://www.econ.berkeley.edu/faculty" />
+<meta name="twitter:title" content="Faculty profiles" />
+  <title>Faculty profiles | Department of Economics</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="cleartype" content="on">
+
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  
+  <link rel="shortcut icon" href="/sites/all/themes/econ_2015/favicon.ico?v=2" />
+
+  <style>
+@import url("https://www.econ.berkeley.edu/modules/system/system.base.css?qd2t0w");
+</style>
+<style>
+@import url("https://www.econ.berkeley.edu/modules/book/book.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/calendar/css/calendar_multiday.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/modules/comment/comment.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/date/date_api/date.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/date/date_repeat_field/date_repeat_field.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/modules/field/theme/field.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/modules/node/node.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/office_hours/office_hours.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/modules/search/search.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/modules/user/user.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/extlink/extlink.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/views/css/views.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?qd2t0w");
+</style>
+<style>
+@import url("https://www.econ.berkeley.edu/sites/all/modules/ctools/css/ctools.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/panels/css/panels.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/modules/biblio/biblio.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/modules/taxonomy/taxonomy.css?qd2t0w");
+</style>
+<style>
+@import url("https://www.econ.berkeley.edu/sites/all/themes/econ_2015/css/styles.css?qd2t0w");
+@import url("https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/vendor/select2/select2.css?qd2t0w");
+</style>
+  <script src="https://www.econ.berkeley.edu/sites/all/modules/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.3"></script>
+<script src="https://www.econ.berkeley.edu/misc/jquery-extend-3.4.0.js?v=1.8.3"></script>
+<script src="https://www.econ.berkeley.edu/misc/jquery-html-prefilter-3.5.0-backport.js?v=1.8.3"></script>
+<script src="https://www.econ.berkeley.edu/misc/jquery.once.js?v=1.2"></script>
+<script src="https://www.econ.berkeley.edu/misc/drupal.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/modules/spamspan/spamspan.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/modules/extlink/extlink.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/modules/ctools/js/auto-submit.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/modules/google_analytics/googleanalytics.js?qd2t0w"></script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-32626458-1", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");</script>
+<script src="https://www.econ.berkeley.edu/sites/all/modules/field_group/field_group.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/vendor/waypoints.min.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/vendor/jquery.touchSwipe.min.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/vendor/matchHeight/jquery.matchHeight-min.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/vendor/select2/select2.min.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/vendor/ScrollToFixed/jquery-scrolltofixed-min.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/vendor/jquery.expander.min.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/affix.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/alert.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/button.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/carousel.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/collapse.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/dropdown.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/modal.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/tooltip.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/popover.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/scrollspy.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/tab.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap/transition.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/bootstrap/javascripts/bootstrap.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/script.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/mobile-menu.js?qd2t0w"></script>
+<script src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/js/views_slideshow_swipe.js?qd2t0w"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"econ_2015","theme_token":"25CWVTwS4RBtNXpNQ1N4YSBcoSflwQQg2GJsLB80bdQ","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery-html-prefilter-3.5.0-backport.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/spamspan\/spamspan.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/ctools\/js\/auto-submit.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/field_group\/field_group.js":1,"sites\/all\/themes\/econ_2015\/js\/vendor\/waypoints.min.js":1,"sites\/all\/themes\/econ_2015\/js\/vendor\/jquery.touchSwipe.min.js":1,"sites\/all\/themes\/econ_2015\/js\/vendor\/matchHeight\/jquery.matchHeight-min.js":1,"sites\/all\/themes\/econ_2015\/js\/vendor\/select2\/select2.min.js":1,"sites\/all\/themes\/econ_2015\/js\/vendor\/ScrollToFixed\/jquery-scrolltofixed-min.js":1,"sites\/all\/themes\/econ_2015\/js\/vendor\/jquery.expander.min.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/affix.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/alert.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/button.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/carousel.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/collapse.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/dropdown.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/modal.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/tooltip.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/popover.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/scrollspy.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/tab.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap\/transition.js":1,"sites\/all\/themes\/econ_2015\/bootstrap\/javascripts\/bootstrap.js":1,"sites\/all\/themes\/econ_2015\/js\/script.js":1,"sites\/all\/themes\/econ_2015\/js\/mobile-menu.js":1,"sites\/all\/themes\/econ_2015\/js\/views_slideshow_swipe.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/office_hours\/office_hours.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/biblio\/biblio.css":1,"modules\/taxonomy\/taxonomy.css":1,"sites\/all\/themes\/econ_2015\/system.menus.css":1,"sites\/all\/themes\/econ_2015\/system.messages.css":1,"sites\/all\/themes\/econ_2015\/system.theme.css":1,"sites\/all\/themes\/econ_2015\/css\/styles.css":1,"sites\/all\/themes\/econ_2015\/css\/wysiwyg.css":1,"sites\/all\/themes\/econ_2015\/js\/vendor\/select2\/select2.css":1}},"urlIsAjaxTrusted":{"\/faculty":true},"extlink":{"extTarget":"_blank","extClass":"ext","extLabel":"(link is external)","extImgClass":0,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"field_group":{"div":"full"}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-faculty section-faculty page-views" >
+      <p id="skip-link">
+      <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
+    </p>
+      
+
+
+
+<div id="page-wrap" class="">
+
+<header class="header" id="header" role="banner">
+  <div class="header-wrapper-bg container">
+      <div class="region region-before-header">
+    <div id="block-menu-menu-social-media-menu" class="block block-menu first odd" role="navigation">
+
+      
+    <div class="block-content">
+    <ul class="menu"><li class="menu__item is-leaf first leaf"><a href="https://www.facebook.com/Department-of-Economics-University-of-California-Berkeley-955970441116468" class="menu__link facebook" target="_blank">Facebook</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://twitter.com/berkeleyecon" class="menu__link twitter" target="_blank">Twtitter</a></li>
+<li class="menu__item is-leaf leaf"><a href="https://www.instagram.com/cal_econadvising/" class="menu__link instagram" target="_blank">Instagram</a></li>
+<li class="menu__item is-leaf last leaf"><a href="https://www.linkedin.com/groups/2043330/" class="menu__link linkedin" target="_blank">Linkedin</a></li>
+</ul>  </div>
+</div>
+<div id="block-search-form" class="block block-search last even" role="search">
+
+      
+    <div class="block-content">
+    <form action="/faculty" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-S-5jKlfQe8Dn0SfddqeUnTsa-UQ7UFwOtEttADOJ04U" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+  </div>
+
+    <div class="header-wrapper-fixed">
+              <a href="/" title="Home" rel="home" class="header--logo" id="logo"><img src="https://www.econ.berkeley.edu/sites/all/themes/econ_2015/logo.png" alt="Home" class="header--logo-image" /></a>
+      
+          </div>
+
+   <div class="header-wrapper-nav">
+     <div id="navigation">
+          <div class="header__region region region-header">
+    <div id="block-menu-block-2" class="block block-menu-block first last odd" role="navigation">
+
+      
+    <div class="block-content">
+    <div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-1">
+  <ul class="menu"><li class="menu__item is-expanded first expanded menu-mlid-1225"><a href="/about-us" class="menu__link">About</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1226"><a href="/about-us" title="" class="menu__link">About Us</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1227"><a href="/about-us/chairs-and-managers" class="menu__link">Chairs &amp; Managers</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1646"><a href="/about-us/staff" title="" class="menu__link">Staff</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1229"><a href="/about-us/research-centers" class="menu__link">Research Centers</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-5158"><a href="/newsletter-old" class="menu__link">E-newsletter Signup</a></li>
+<li class="menu__item is-leaf is-parent last leaf has-children menu-mlid-1175"><a href="/resources" class="menu__link">Resources</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-7793"><a href="/news" class="menu__link">News</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-7794"><a href="/events" class="menu__link">Events</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-7804"><a href="/stories-interviews" class="menu__link">Newsroom </a></li>
+<li class="menu__item is-leaf leaf menu-mlid-7795"><a href="/newsletter" class="menu__link">Newsletter</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-5051"><a href="/publications" class="menu__link">Publications</a></li>
+</ul></li>
+<li class="menu__item is-expanded is-active expanded active menu-mlid-5052"><a href="/faculty" title="List of Faculty" class="menu__link active">Faculty</a><ul class="menu"><li class="menu__item is-leaf is-active first leaf active menu-mlid-3177"><a href="/faculty" title="" class="menu__link active">Faculty Profiles</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3221"><a href="/faculty/emeritus" title="List of Emeritus Faculty" class="menu__link">Emeritus</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3061"><a href="/faculty/visiting-and-affiliates" title="Visiting Faculty &amp; Affiliates 2011-2012" class="menu__link">Affiliates</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-9530"><a href="/faculty/in-memoriam" title="List of Faculty In Memoriam" class="menu__link">In Memoriam</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-763"><a href="/grad" class="menu__link">Graduate</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-664"><a href="/grad" class="menu__link">Graduate Program</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-665"><a href="/grad/admissions" class="menu__link">Admissions</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-2322"><a href="/grad/current" title="Current Graduate Students" class="menu__link">Current Students</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3580"><a href="/grad/profiles" title="Economics Graduate Student Profiles" class="menu__link">Graduate Profiles</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-667"><a href="/grad/employment" class="menu__link">Employment</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-7472"><a href="/grad/job-market-candidates" class="menu__link">2020-2021 Ph.D. Job Market Candidates (TBA 11-1-2020)</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-1166"><a href="/undergrad" class="menu__link">Undergraduate</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1167"><a href="/undergrad" class="menu__link">Undergraduate Program</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-9528"><a href="https://www.econ.berkeley.edu/undergrad/home/advising" class="menu__link">Advising</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-9529"><a href="https://www.econ.berkeley.edu/content/congratulations-class-2020" class="menu__link">Commencement</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1168"><a href="/undergrad/current" class="menu__link">Current Majors</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1169"><a href="/undergrad/prospective" class="menu__link">Prospective Majors</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-8769"><a href="https://www.econ.berkeley.edu/content/course-enrollment" class="menu__link">Course Enrollment</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-9527"><a href="https://www.econ.berkeley.edu/undergrad/home/tutoring" class="menu__link">Tutoring</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3062"><a href="/faq" class="menu__link">FAQ</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-1170"><a href="/courses" class="menu__link">Courses</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-1171"><a href="/courses" title="" class="menu__link">Course List</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1172"><a href="/events/seminars" class="menu__link">Seminars</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-1173"><a href="http://events.berkeley.edu/index.php/calendar/sn/econ/type/week.html" title="" class="menu__link">This Week&#039;s Seminars</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-3405"><a href="/courses/seminars/next-week" title="Next Week&#039;s Seminars" class="menu__link">Next Week&#039;s Seminars</a></li>
+</ul></li>
+<li class="menu__item is-expanded expanded menu-mlid-7801"><a href="/give/why-give" class="menu__link">Give </a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-7803"><a href="/give/charter-hill-society" class="menu__link">Charter Hill Society for Economics</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-7831"><a href="/content/give-today" class="menu__link">Give today</a></li>
+</ul></li>
+<li class="menu__item is-leaf leaf menu-mlid-8914"><a href="/content/climate-equity-diversity-and-inclusion" class="menu__link">Climate</a></li>
+<li class="menu__item is-expanded last expanded menu-mlid-7796"><a href="/alumni" class="menu__link">Alumni</a><ul class="menu"><li class="menu__item is-leaf first leaf menu-mlid-7797"><a href="/alumni/network" class="menu__link">Network</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3060"><a href="/alumni/home" class="menu__link">Submit a note</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-7798"><a href="/alumni/events" class="menu__link">Events</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-7799"><a href="/alumni-notes" class="menu__link">Alumni Notes</a></li>
+</ul></li>
+</ul></div>
+  </div>
+</div>
+  </div>
+             </div>
+   </div>
+  </div>
+
+</header>
+
+<div id="page">
+
+
+
+
+    <div id="contextualheader">
+        <div class="region region-contextualheader">
+    <div id="block-nodeblock-faculty" class="block block-nodeblock first last odd">
+
+      
+    <div class="block-content">
+    <div id="node-8744" class="node node-section-banner node-promoted view-mode-full clearfix" about="/content/faculty" typeof="sioc:Item foaf:Document">
+
+        <span property="dc:title" content="Faculty" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+  
+  <div class="content">
+    <div class="field field-name-field-banner-image field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/banners/DSC_0157-123.jpg" width="1600" height="230" alt="" /></div></div></div><div class="field field-name-field-tr-banner-overlay field-type-taxonomy-term-reference field-label-hidden"><div class="field-items"><div class="field-item even"><div id="taxonomy-term-97" class="taxonomy-term vocabulary-banner-overlays-inner-page">
+
+  
+  <div class="content">
+    <div class="field field-name-field-banner-overlay field-type-image field-label-hidden"><div class="field-items"><div class="field-item even"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/INNER_06a.png" width="1600" height="230" alt="" /></div></div></div>  </div>
+
+</div>
+</div></div></div><div class="container"><div class="field field-name-title-field field-type-text field-label-hidden"><div class="field-items"><div class="field-item even"><h2>Faculty</h2>
+</div></div></div></div>  </div>
+
+  
+  
+</div>
+  </div>
+</div>
+  </div>
+    </div>
+  <div id="main">
+
+    <div id="main-wrapper">
+
+      
+
+      <div id="content" class="column col-md-16" role="main">
+                        <a id="main-content"></a>
+
+        
+                  <div class="title-subtitle-wrapper">
+                          <h1 class="page--title title" id="page-title">Faculty profiles</h1>
+                                              </div>
+        
+        
+                                        
+
+
+<div class="view view-faculty-list view-id-faculty_list view-display-id-faculty_list view-dom-id-9fa565b62113d178d1512d7fd17088c5">
+            <div class="view-header">
+      <h2>Members of the Economics Department</h2>
+    </div>
+  
+      <div class="view-filters">
+      <form class="ctools-auto-submit-full-form" action="/faculty" method="get" id="views-exposed-form-faculty-list-faculty-list" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-groups-wrapper" class="views-exposed-widget views-widget-filter-field_groups_value">
+                        <div class="views-widget">
+          <div class="form-item form-type-select form-item-groups">
+ <select id="edit-groups" name="groups" class="form-select"><option value="All" selected="selected">- Any -</option><option value="Comparative Economics">Comparative Economics</option><option value="Development Economics">Development Economics</option><option value="Econometrics">Econometrics</option><option value="Economic Demography">Economic Demography</option><option value="Economic History">Economic History</option><option value="Economic Theory">Economic Theory</option><option value="Economics of Institutions">Economics of Institutions</option><option value="Finance">Finance</option><option value="Industrial Organization">Industrial Organization</option><option value="International Economics">International Economics</option><option value="Labor Economics">Labor Economics</option><option value="Law and Economics">Law and Economics</option><option value="Macroeconomics">Macroeconomics</option><option value="Mathematical Economics">Mathematical Economics</option><option value="Monetary Theory">Monetary Theory</option><option value="Political Economics">Political Economics</option><option value="Psychology and Behavioral Economics">Psychology and Economics (Behavioral Economics)</option><option value="Public Economics">Public Economics</option></select>
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input class="ctools-use-ajax ctools-auto-submit-click js-hide form-submit" type="submit" id="edit-submit-faculty-list" name="" value="Apply" />    </div>
+      </div>
+</div>
+</div></form>    </div>
+  
+  
+      <div class="view-content">
+      <table  class="views-table cols-0">
+       <tbody>
+          <tr  class="odd views-row views-row-first">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/david-s-ahn"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-802-1419035731.jpg?itok=CTPkLO38" alt="David S. Ahn&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/david-s-ahn">Ahn, David S.
+</a></h3>
+<div class="views_field_position"><strong>Professor</strong></div>
+<div class="views_field_status">On Leave, AY 20/21</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/alan-auerbach"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-805-1420589419.jpg?itok=8nXSl3aO" alt="Alan Auerbach&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/alan-auerbach">Auerbach, Alan J.
+</a></h3>
+<div class="views_field_position"><strong>Robert D. Burch Professor of Economics and Law</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/522372"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-15147-1588601744.jpg?itok=bSd6RemE" alt="Sydnee Caldwell&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/522372">Caldwell, Sydnee
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/david-card"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-808-1419036107.jpg?itok=snYTQwvN" alt="David Card&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/david-card">Card, David
+</a></h3>
+<div class="views_field_position"><strong>Class of 1950 Professor of Economics; ; Department Chair</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/stefano-dellavigna"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-811-1426797450.jpg?itok=xmPjfRwo" alt="Stefano DellaVigna&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/stefano-dellavigna">DellaVigna, Stefano
+</a></h3>
+<div class="views_field_position"><strong>Daniel E. Koshland, Sr. Distinguished Professor of Economics and Professor of Business Administration</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/brad-delong"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-812-1419036191.jpg?itok=AI89IxBl" alt="Brad DeLong&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/brad-delong">DeLong, J.Bradford
+</a></h3>
+<div class="views_field_position"><strong>Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/921383"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-15286-1592958388.jpg?itok=hms44DKl" alt="921383&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/921383">Derenoncourt, Ellora
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/aaron-edlin"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-813-1419036206.jpg?itok=w3sClJRD" alt="Aaron Edlin&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/aaron-edlin">Edlin, Aaron
+</a></h3>
+<div class="views_field_position"><strong>Richard Jennings Endowed Chair, Professor of Economics, Professor of Law</strong></div>
+<div class="views_field_status">Sabbatical, AY19/20</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/barry-eichengreen"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-814-1426796767.jpg?itok=3aGQgNWL" alt="Barry Eichengreen&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/barry-eichengreen">Eichengreen, Barry
+</a></h3>
+<div class="views_field_position"><strong>George C. Pardee and Helen N. Pardee Professor of Economics and Political Science</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/haluk-ergin"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-1893-1329350026.jpg?itok=XeP9ILuD" alt="Haluk Ergin&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/haluk-ergin">Ergin, Haluk
+</a></h3>
+<div class="views_field_position"><strong>Associate Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1045095"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-4664-1455998988.jpg?itok=G86trh9T" alt="Ben Faber&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1045095">Faber, Benjamin
+</a></h3>
+<div class="views_field_position"><strong>Associate Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/frederico-finan"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-816-1419036512.jpg?itok=y18KzM-t" alt="Frederico Finan&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/frederico-finan">Finan, Frederico
+</a></h3>
+<div class="views_field_position"><strong>Professor of Economics and Business Administration</strong></div>
+<div class="views_field_status">Sabbatical, Spring 2020</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1082024-0"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-8351-1441729506.jpg?itok=XFTyqtk3" alt="Cecile Gaubert&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1082024-0">Gaubert, Cecile
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Sabbatical, Fall 2020; On leave, Spring 2021</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/191202"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-9071-1595275521.jpg?itok=JYryOmyu" alt="Lisa Goldberg&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/191202">Goldberg, Lisa	
+</a></h3>
+<div class="views_field_position"><strong>Professor of the Practice of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/yuriy-gorodnichenko"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-818-1426797472.jpg?itok=_jlGWy2O" alt="Yuriy Gorodnichenko&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/yuriy-gorodnichenko">Gorodnichenko, Yuriy
+</a></h3>
+<div class="views_field_position"><strong>Quantedge Presidential Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/pierre-olivier-gourinchas"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-819-1419036610.jpg?itok=jbQ9fuqa" alt="Pierre-Olivier Gourinchas&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/pierre-olivier-gourinchas">Gourinchas, Pierre-Olivier
+</a></h3>
+<div class="views_field_position"><strong>Professor of Economics, Department of Economics; S.K. and Angela Chan Professor of Global Management, Haas School of Business; Director, Clausen Center for International Business and Policy</strong></div>
+<div class="views_field_status">On Leave, AY19/20</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/bryan-graham"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-820-1426796816.jpg?itok=ZKXxzrNu" alt="Bryan Graham&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/bryan-graham">Graham, Bryan S.
+</a></h3>
+<div class="views_field_position"><strong>Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/ben-handel"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-822-1419036717.jpg?itok=mBXOeOlT" alt="Ben Handel&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/ben-handel">Handel, Ben
+</a></h3>
+<div class="views_field_position"><strong>Associate Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/benjamin-e-hermalin"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-823-1419036733.jpg?itok=jyqylpRB" alt="Benjamin E. Hermalin&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/benjamin-e-hermalin">Hermalin, Benjamin E.
+</a></h3>
+<div class="views_field_position"><strong>Thomas &amp; Alison Schneider Distinguished Professor of Finance and Professor of Economics</strong></div>
+<div class="views_field_status">Vice Provost for the Faculty (advising but not teaching)</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1045061"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-4704-1582247255.jpg?itok=WE_wKESP" alt="Hilary Hoynes&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1045061">Hoynes, Hilary
+</a></h3>
+<div class="views_field_position"><strong>Professor of Public Policy and Economics, Haas Distinguished Chair in Economic Disparities</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/michael-jansson"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-824-1419036793.jpg?itok=Ci_p0qmZ" alt="Michael Jansson&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/michael-jansson">Jansson, Michael
+</a></h3>
+<div class="views_field_position"><strong>Edward G. and Nancy S. Jordan Family Professor of Economics</strong></div>
+<div class="views_field_status">Sabbatical, Spring 2020</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/shachar-kariv"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-825-1419036890.jpg?itok=JH8sk-87" alt="Shachar Kariv&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/shachar-kariv">Kariv, Shachar
+</a></h3>
+<div class="views_field_position"><strong>Benjamin N. Ward Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1131901"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-9438-1468267722.jpg?itok=LMuDI49S" alt="Supreet Kaur&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1131901">Kaur, Supreet
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+                      </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1097832">Kawai, Kei
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/patrick-kline"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-827-1426797419.jpg?itok=5OHErzwE" alt="Patrick Kline&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/patrick-kline">Kline, Patrick
+</a></h3>
+<div class="views_field_position"><strong>Professor</strong></div>
+<div class="views_field_status">Sabbatical, Fall 2020</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1045117"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-14833-1576534444.jpg?itok=BCqkW0-6" alt="Jon Kolstad&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1045117">Kolstad, Jon
+</a></h3>
+<div class="views_field_position"><strong>Associate Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1706385"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-15288-1592960374.jpg?itok=sJn6sCLa" alt="1706385&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1706385">Lian, Chen
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/ulrike-malmendier"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-830-1419037694.jpg?itok=ZXdpO6fu" alt="Ulrike Malmendier&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/ulrike-malmendier">Malmendier, Ulrike
+</a></h3>
+<div class="views_field_position"><strong>Edward and Mollie Arnold Professor of Finance and Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/edward-miguel"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-834-1426797483.jpg?itok=RWhxGw2j" alt="Edward Miguel&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/edward-miguel">Miguel, Edward
+</a></h3>
+<div class="views_field_position"><strong>Oxfam Professor in Environmental and Resource Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/enrico-moretti"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-835-1430503608.jpg?itok=X7vLC7Ts" alt="Enrico Moretti&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/enrico-moretti">Moretti, Enrico
+</a></h3>
+<div class="views_field_position"><strong>Michael Peevey and Donald Vial Professor of Economics; Professor of Business Administration</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/john-morgan"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-836-1325713008.jpg?itok=7wF0A5QN" alt="John Morgan&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/john-morgan">Morgan, John
+</a></h3>
+<div class="views_field_position"><strong>Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1602530"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-13010-1571938992.jpg?itok=PZo9vtng" alt="Emi Nakamura&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1602530">Nakamura, Emi
+</a></h3>
+<div class="views_field_position"><strong>Chancellor&#039;s Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/maurice-obstfeld"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-838-1419037604.jpg?itok=Hrni4FLY" alt="Maurice Obstfeld&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/maurice-obstfeld">Obstfeld, Maurice
+</a></h3>
+<div class="views_field_position"><strong>Class of 1958 Professor of Economics</strong></div>
+<div class="views_field_status">Sabbatical, Fall 2019</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/martha-olney"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-839-1426797403.jpg?itok=EogF2dc4" alt="Martha Olney&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/martha-olney">Olney, Martha L.
+</a></h3>
+<div class="views_field_position"><strong>Teaching Professor of Economics</strong></div>
+<div class="views_field_status">Sabbatical In Residence, Fall 2020</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/demian-pouzo"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-840-1419037570.jpg?itok=_izl6ZUM" alt="Demian Pouzo&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/demian-pouzo">Pouzo, Demian
+</a></h3>
+<div class="views_field_position"><strong>Associate Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/james-l-powell"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-841-1426797313.jpg?itok=x7GoLmmA" alt="James L. Powell&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/james-l-powell">Powell, James L.
+</a></h3>
+<div class="views_field_position"><strong>George Break and Helen Schnacke Break Distinguished Professor of Economics</strong></div>
+<div class="views_field_status">Sabbatical, Fall 2019</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/andres-rodriguez-clare"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-1894-1329349975.jpg?itok=UTbZLnKm" alt="Andres Rodriguez-Clare&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/andres-rodriguez-clare">Rodriguez-Clare, Andres
+</a></h3>
+<div class="views_field_position"><strong>Edward G. and Nancy S. Jordan Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/g%C3%A9rard-roland"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-845-1426797167.jpg?itok=rX_99LZf" alt="Gérard Roland&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/g%C3%A9rard-roland">Roland, Gérard
+</a></h3>
+<div class="views_field_position"><strong>E. Morris Cox Professor of Economics and Professor of Political Science</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/christina-romer"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-847-1419037402.jpg?itok=Vz04_6G8" alt="Christina Romer&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/christina-romer">Romer, Christina D.
+</a></h3>
+<div class="views_field_position"><strong>Class of 1957-Garff B. Wilson Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/david-h-romer"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-848-1419039690.jpg?itok=c7xVLP-s" alt="David H. Romer&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/david-h-romer">Romer, David H.
+</a></h3>
+<div class="views_field_position"><strong>Herman Royer Professor in Political Economy</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/jesse-rothstein"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-850-1419037323.jpg?itok=Pqx7-9Js" alt="Jesse Rothstein&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/jesse-rothstein">Rothstein, Jesse
+</a></h3>
+<div class="views_field_position"><strong>Professor of Public Policy and Economics; Director, Institute for Research on Labor and Employment (IRLE)</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/emmanuel-saez"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-852-1419037279.jpg?itok=6UyFpAdr" alt="Emmanuel Saez&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/emmanuel-saez">Saez, Emmanuel
+</a></h3>
+<div class="views_field_position"><strong>Chancellor&#039;s Professorship of Tax Policy and Public Finance, Director, Center for Equitable Growth</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1116691"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-8010-1564777349.jpg?itok=-1L0Fd17" alt="Benjamin Schoefer&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1116691">Schoefer, Benjamin
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1651337"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-15262-1590685019.png?itok=8VJ_Wqu-" alt="1651337&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1651337">Semenova, Vira
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+                      </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/chris-shannon">Shannon, Chris
+</a></h3>
+<div class="views_field_position"><strong>Richard and Lisa Steiny Professor of Economics, Professor of Mathematics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1608345"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-14835-1575936889.jpg?itok=8Cd4lC-t" alt="Joseph Shapiro&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1608345">Shapiro, Joseph
+</a></h3>
+<div class="views_field_position"><strong>Associate Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/323405"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-6328-1426797142.jpg?itok=GHmW7k8h" alt="David Sraer&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/323405">Sraer, David
+</a></h3>
+<div class="views_field_position"><strong>James J. and Marianne B. Lowrey Associate Professor of Business &amp; Associate Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/013121396"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-13013-1529076655.jpg?itok=Xpex5p05" alt="Jón Steinsson&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/013121396">Steinsson, Jón
+</a></h3>
+<div class="views_field_position"><strong>Chancellor&#039;s Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1115120"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-11256-1502124088.jpg?itok=XZjr3Xhy" alt="Dmitry Taubinsky&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1115120">Taubinsky, Dmitry
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor </strong></div>
+<div class="views_field_status">On Leave, AY 20/21</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1608709"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-14837-1579201194.jpg?itok=zCCyYriu" alt="Nick Tsivanidis&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1608709">Tsivanidis, Nick
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1012606"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-10032-1476975699.jpg?itok=OHSaz8DD" alt="Reed Walker&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1012606">Walker, Reed
+</a></h3>
+<div class="views_field_position"><strong>Transamerica Associate Professor of Business Strategy &amp; Associate Professor of Economics</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1046378"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-4678-1425946373.jpg?itok=2S7hyy_O" alt="Christopher Walters&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1046378">Walters, Christopher
+</a></h3>
+<div class="views_field_position"><strong>Associate Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="odd views-row">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1010623"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-6223-1426909520.jpg?itok=gskZSmq8" alt="Danny Yagan&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1010623">Yagan, Danny
+</a></h3>
+<div class="views_field_position"><strong>Assistant Professor</strong></div>
+<div class="views_field_status">Teaching</div>          </td>
+              </tr>
+          <tr  class="even views-row views-row-last">
+                  <td  class="views-field views-field-picture col-md-4">
+            <a href="/profile/1047593"><img typeof="foaf:Image" src="https://www.econ.berkeley.edu/sites/default/files/styles/faculty_picture/public/pictures/picture-8013-1438707308.jpg?itok=-_8iXTzi" alt="Gabriel Zucman&#039;s picture" /></a>          </td>
+                  <td  class="views-field views-field-nothing">
+            <h3><a href="https://www.econ.berkeley.edu/profile/1047593">Zucman, Gabriel
+</a></h3>
+<div class="views_field_position"><strong>Associate Professor of Economics and Director of the Stone Center on Wealth and Income Inequality</strong></div>
+<div class="views_field_status">Sabbatical, Fall 2020</div>          </td>
+              </tr>
+      </tbody>
+</table>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>              </div>
+
+              <aside class="sidebar">
+                      <section class="region region-sidebar-second column sidebar col-md-7 col-md-push-1">
+    <div id="block-menu-block-5" class="block block-menu-block first last odd" role="navigation">
+
+        <h2 class="block__title block-title">Faculty</h2>
+    
+    <div class="block-content">
+    <div class="menu-block-wrapper menu-block-5 menu-name-main-menu parent-mlid-5052 menu-level-1">
+  <ul class="menu"><li class="menu__item is-leaf is-active first leaf active menu-mlid-3177"><a href="/faculty" title="" class="menu__link active">Faculty Profiles</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3221"><a href="/faculty/emeritus" title="List of Emeritus Faculty" class="menu__link">Emeritus</a></li>
+<li class="menu__item is-leaf leaf menu-mlid-3061"><a href="/faculty/visiting-and-affiliates" title="Visiting Faculty &amp; Affiliates 2011-2012" class="menu__link">Affiliates</a></li>
+<li class="menu__item is-leaf last leaf menu-mlid-9530"><a href="/faculty/in-memoriam" title="List of Faculty In Memoriam" class="menu__link">In Memoriam</a></li>
+</ul></div>
+  </div>
+</div>
+  </section>
+        </aside>
+      
+    </div>
+
+  </div>
+
+      <footer id="footer" class="region region-footer">
+    <div class="container"><div id="block-block-132" class="block block-block first odd">
+
+      
+    <div class="block-content">
+    <p>© Copyright 2015 UC Regents.<br />
+University of California, Berkeley | College of Letters &amp; Science</p>
+  </div>
+</div>
+<div id="block-block-1" class="block block-block last even">
+
+      
+    <div class="block-content">
+    <div class="footer-info">
+<div class="address">530 Evans Hall #3880, Berkeley, California 94720-3880<br />Tel: (510) 642-0822 / Fax: (510) 642-6615 / E-mail: <a href="mailto:econdept@berkeley.edu">econdept@berkeley.edu</a></div>
+<div class="site-info">UCB Privacy Statement | Disclaimer<br />For website updates, please contact <a href="mailto:web@econ.berkeley.edu">web@econ.berkeley.edu</a></div>
+</div>
+  </div>
+</div>
+</div>  </footer>
+</div>
+
+</div>
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"eb60764641","applicationID":"374286","transactionName":"Z1cGYkBVV0JRUkxaCV4dMURbGxZYXlVdS0hAWhQ=","queueTime":0,"applicationTime":9,"atts":"SxAFFAhPREw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
