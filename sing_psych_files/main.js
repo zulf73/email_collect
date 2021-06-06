@@ -1,0 +1,1 @@
+function keepPages(page){document.getElementById("pagenumber").value=page;var submit_btn=jQuery('#search-submit');submit_btn.click();}

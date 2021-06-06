@@ -1,0 +1,1 @@
+function submitPeopleForm(){var submit_btn=jQuery('#form-people-filter').find('input[type="submit"]');submit_btn.click();}

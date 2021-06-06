@@ -1,0 +1,174 @@
+@media only screen and (max-width: 991px){
+
+  #site-navigation {
+    position: relative;
+  }
+
+  .ast-header-break-point #site-navigation:before {
+      content: "SIDEBAR";
+      display: block;
+      padding: 12px 15px;
+      background-color: #eee;
+      font-size: 14px;
+      font-weight: 700;
+      color: #333;
+      line-height: 11px;
+  }
+
+  .main-header-bar .main-header-bar-navigation.toggle-on {
+    padding-top: 0px;
+  }
+
+  #nav-closer {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #bbbbbb;
+    font-size: 21px;
+    font-weight: 700;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+    color: #000;
+    text-decoration: none;
+  }
+
+  #nav-closer:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+  }
+
+
+  .ast-header-break-point .main-navigation:before {
+    content: "Main Menu";
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    line-height: 19.8px;
+  }
+
+  #site-navigation .main-navigation {
+    padding: 24px 12px;
+  }
+
+  #site-navigation .main-navigation #primary-menu {
+    background-color: white;
+  }
+
+  #site-navigation .main-navigation #primary-menu > li > a, .nus-main-menu-container .nus-quicklinks ul > li > a {
+    color: #003d7c;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 15px 35px;
+    width: 100%;
+  }
+
+  .nus-main-menu-container .nus-quicklinks ul > li > a {
+    border-bottom-width: 1px;
+    border-style: solid;
+    border-color: #eaeaea;
+  }
+
+  .ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle, .ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children>.ast-menu-toggle {
+    line-height: 48px;
+    padding: 0px 22px;
+    right: 0px;
+  }
+
+  .ast-header-break-point .main-header-bar .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle::before, .ast-header-break-point .main-header-bar .main-header-bar-navigation .page_item_has_children>.ast-menu-toggle::before {
+    font-size: 10px;
+  }
+
+  #site-navigation .main-navigation #primary-menu > li > a:hover, #site-navigation .main-navigation #primary-menu > li > button:hover, .nus-main-menu-container .nus-quicklinks ul > li:hover > a {
+    color: #000;
+    background-color: #eee;
+    text-decoration: none;
+  }
+
+  .nus-main-menu-container .nus-quicklinks ul {
+    margin-left: 0px;
+  }
+
+  .nus-main-menu-container .nus-quicklinks ul > li {
+    width: 100%;
+    display: flex;
+  }
+
+  .nus-main-menu-container .nus-quicklinks:before {
+    content: "Quicklinks";
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    line-height: 19.8px;
+  }
+
+
+  .ast-header-break-point .main-header-bar .main-header-bar-navigation {
+    display: block;
+  }
+
+  .ast-header-break-point .main-header-bar .nus-main-menu-container {
+    position: fixed;
+    overflow-y: scroll;
+    max-width: 300px;
+    background-color: #fff;
+    top: 0px;
+    height: 100%;
+    right: -610px;
+    transform: translate3d(-310px, 0, 0);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .ast-header-break-point .main-header-bar .nus-main-menu-container .nus-quicklinks {
+    display: none;
+  }
+
+  .ast-header-break-point.ast-main-header-nav-open .main-header-bar .nus-main-menu-container {
+    transform: translate3d(-310px, 0, 0);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .ast-header-break-point.ast-main-header-nav-open .main-header-bar .nus-main-menu-container .nus-quicklinks {
+    display: block;
+    padding-bottom: 24px;
+  }
+
+  .ast-header-break-point #page {
+    transform: translate3d(0px, 0, 0);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .ast-main-header-nav-open #page {
+    transform: translate3d(-300px, 0, 0);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .ast-main-header-nav-open #page:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1;
+    background: rgba(0,0,0,0.2);
+    content: '';
+    -webkit-transition: opacity 0.5s,width 0.1s 0.5s,height 0.1s 0.5s;
+    transition: opacity 0.5s,width 0.1s 0.5s,height 0.1s 0.5s;
+    z-index: 100;
+  }
+
+
+
+}

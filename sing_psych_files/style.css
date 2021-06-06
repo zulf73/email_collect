@@ -1,0 +1,384 @@
+.home-upcoming-event h2 {
+	text-align: center;
+	color: #003061;
+}
+
+.home-upcoming-event .event-row .event-date {
+	width: 22%;
+	float: left;
+	padding-top: 20px;
+}
+
+.home-upcoming-event .event-row .event-date h4 {
+	color: #003061;
+	font-size: 30px;
+	line-height: 26px;
+  text-align: center;
+}
+
+.home-upcoming-event .event-row .event-title {
+	width: 80%;
+	float: left;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+.home-upcoming-event .event-row .event-title h5 {
+	color: #003061;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+.mainhome-upcoming-event > div{
+	margin-bottom: 40px;
+  display: flow-root;
+}
+
+.mainhome-upcoming-event  .event-block {
+		height: 100%
+}
+
+.mainhome-upcoming-event .event-date {
+    width: 15%;
+    height: 100%;
+    float: left;
+    min-width: 40px;
+    max-width: 50px;
+}
+
+
+@media (max-width: 768px){
+  .mainhome-upcoming-event .event-date {
+      width: 8%;
+  }
+}
+
+.mainhome-upcoming-event .event-date h4, .mainhome-upcoming-event .event-date h6 {
+	text-align: center;
+	background-color: #0F2F5E;
+	color: white;
+	font-weight: 600;
+  margin-bottom: 0px
+}
+
+.mainhome-upcoming-event .event-date h4 {
+  font-size: 26px;
+  padding-top: 10px;
+  line-height: 26px;
+}
+
+.mainhome-upcoming-event .event-date h6 {
+  font-weight: normal;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.mainhome-upcoming-event .event-desc {
+	height: 100%;
+	width: 81%;
+	padding: 0px 10px 10px 10px;
+	float: left;
+}
+
+.mainhome-upcoming-event .event-desc .event-cat {
+  color: #595858;
+  text-align: left;
+}
+
+.mainhome-upcoming-event .event-title h4, .mainhome-upcoming-event .event-title h5 {
+	color: #0F2F5E;
+  line-height: 23px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.mainhome-upcoming-event .event-info {
+	color: #595858;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+.mainhome-upcoming-event .event-info .event-venue, .mainhome-upcoming-event .event-info .event-venue p {
+	margin-bottom: 0px;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+
+body.yellow .home-upcoming-event .event-row, body.red .home-upcoming-event .event-row, body.blue .home-upcoming-event .event-row, body.green .home-upcoming-event .event-row {
+  display: flex;
+}
+
+body.yellow .home-upcoming-event .event-row:nth-child(even) {
+  background-color: #ffecb2;
+}
+
+body.red .home-upcoming-event .event-row:nth-child(even) {
+  background-color: #FFCDD2;
+}
+
+body.blue .home-upcoming-event .event-row:nth-child(even)  {
+  background-color: #c5cae8;
+}
+
+body.green .home-upcoming-event .event-row:nth-child(even)  {
+  background-color: #ddedc8;
+}
+
+.event-listing > div {
+	margin-bottom: 20px;
+}
+
+.event-listing .event-block, .news-block {
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 18px -13px rgba(0,0,0,0.75);
+  margin: 10px auto;
+  height: 100%;
+  max-width: 400px;
+}
+
+.event-listing .event-block h5 {
+    font-size: 24px;
+		padding-left: 10px;
+}
+
+.event-listing .event-block div.section{
+    color: #ef7e08;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+
+
+.title-container {
+	background-color: #003d7c;
+	display: flow-root;
+  margin-bottom: 20px;
+}
+
+.title-container h1 {
+	margin: 20px 0px;
+	color: white;
+	font-size: 30px;
+	line-height: 39px;
+}
+
+.fl-row.fl-row-fixed-width .the-content {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+
+.event-info-container {
+  background-color: #F4F4F4;
+  padding: 20px 30px;
+	margin-bottom: 20px;
+  height: fit-content;
+}
+
+.event-info-container > h5 {
+  font-size: 18px;
+  color: #ef7e08;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.event-info-container .event-info {
+  color: #003061;
+  font-weight: 600;
+}
+
+
+.event-info-widget .fl-col .fl-row-content-wrap .fl-row-content {
+	margin: 0px -20px;
+}
+
+.event-page .event-block .event-date {
+	background-color: #013D7C;
+	width: 18%;
+	text-align: center;
+	color: white;
+	padding: 15px 10px;
+	float: left;
+}
+
+.event-page .event-block {
+	padding: 0px 0px 30px;
+	margin: 0px 0px 30px;
+	display: flow-root;
+	border-bottom: 1px solid #dee5ea;
+}
+
+.event-page .event-block .event-date h4, .event-page .event-block .event-date h6{
+	margin-bottom: 0px;
+	color: white;
+}
+
+.event-page .event-block .event-date h4  {
+	font-size: 28px;
+	line-height: 34px;
+}
+
+.event-page .event-block .event-date h6 {
+	font-size: 22px;
+	line-height: 22px;
+}
+
+.event-page .event-block .event-desc  {
+	float: left;
+	padding-left: 20px;
+	width: 78%;
+}
+
+.event-page .event-block .event-title h5 {
+	margin-bottom: 0px;
+	color: #003061;
+	line-height: 20px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.event-page .event-block .event-desc .event-venue, .event-page .event-block .event-desc .event-time {
+	color: #828282;
+}
+
+.event-filter .label {
+	float: left;
+	padding-top: 5px;
+}
+
+.event-page .event-link {
+	color: #ef830f;
+}
+
+.event-filter select {
+	width: 30%;
+	float: left;
+	margin-left: 20px;
+}
+
+
+
+/*******************************Calendar Top Navigation*********************************/
+div#events-module-cal{
+  margin:0px auto;
+	margin-top: 20px;
+  padding:0px;
+}
+
+div#events-module-cal div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    background-color: #013d7c;
+}
+
+div#events-module-cal div.header{
+    line-height:24px;
+    vertical-align:middle;
+    text-align:center;
+		padding: 15px 0px;
+}
+
+div#events-module-cal div.header a.prev,div#events-module-cal div.header a.next{
+    position:absolute;
+    top:0px;
+    height: 17px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+
+div#events-module-cal div.header span.title{
+    color:#FFF;
+    font-size:26px;
+}
+
+div#events-module-cal div.header a.prev{
+		top: 15px;
+		left:20px;
+		font-size: 22px
+}
+
+div#events-module-cal div.header a.next{
+		top: 15px;
+		right:20px;
+		font-size: 22px;
+}
+
+/*******************************Calendar Content Cells*********************************/
+
+div#events-module-cal ul.label{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+		width: 100%;
+}
+
+div#events-module-cal ul.label li{
+    margin:10px;
+    padding:10px 0px;
+		width: 9.8%;
+    float:left;
+    list-style-type:none;
+    vertical-align:middle;
+    text-align:center;
+    color:#000;
+    font-size: 15px;
+		font-weight: 600;
+    background-color: transparent;
+}
+
+
+div#events-module-cal ul.dates{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+/** overall width = width+padding-right**/
+div#events-module-cal ul.dates li{
+    margin:10px;
+    padding:10px;
+		width: 9.8%;
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+    font-size:18px;
+    background-color: #fff;
+    color:#000;
+    text-align:center;
+		font-weight: 600;
+}
+
+:focus{
+    outline:none;
+}
+
+div.clear{
+    clear:both;
+}
+
+div#events-module-cal .dates .has-event {
+	background-color: #013d7c;
+	color: white;
+}
+
+div#events-module-cal .dates .today {
+	background-color: #d3dde8 !important;
+	color: #000;
+}

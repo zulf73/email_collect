@@ -9,7 +9,7 @@ def get_emails( url ):
 #print("Processing %s" % url)
 	try:
 		response = requests.get(url)
-		new_emails = set(re.findall(r"mailto:([a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+)", response.text, re.I))
+		new_emails = set(re.findall(r"([a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+)", response.text, re.I))
 		return new_emails
 	except (requests.exceptions.MissingSchema, requests.exceptions.ConnectionError):
 	    # ignore pages with errors

@@ -2,7 +2,6 @@ ecs@srl.caltech.edu
 etcher@caltech.edu
 hjkimble@caltech.edu
 fcp@caltech.edu
-pma_
 politzer@theory.caltech.edu
 aliceaj@caltech.edu
 cmartin@srl.caltech.edu
